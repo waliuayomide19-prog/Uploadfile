@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Survey Form</title>
+</head>
+
+<body>
+
+  <h1 id="title">My Survey Form</h1>
+
+  <p id="description">
+    Please complete this short survey and tell us about yourself.
+  </p>
+
+  <form id="survey-form">
+
+    <!-- Name -->
+    <label id="name-label" for="name">Name</label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter your name"
+      required
+    >
+
+    <br><br>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <br><br>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age</label>
+    <input
+      id="number"
+      type="number"
+      min="10"
+      max="100"
+      placeholder="Enter your age"
+    >
+
+    <br><br>
+
+    <!-- Dropdown -->
+    <label for="dropdown">What do you like most?</label>
+    <select id="dropdown">
+      <option value="coding">Coding</option>
+      <option value="gaming">Gaming</option>
+      <option value="music">Music</option>
+    </select>
+
+    <br><br>
+
+    <!-- Radio buttons -->
+    <p>How would you rate this survey?</p>
+
+    <label>
+      <input type="radio" name="rating" value="excellent">
+      Excellent
+    </label>
+
+    <label>
+      <input type="radio" name="rating" value="good">
+      Good
+    </label>
+
+    <label>
+      <input type="radio" name="rating" value="poor">
+      Poor
+    </label>
+
+    <br><br>
+
+    <!-- Checkboxes -->
+    <p>Which activities do you enjoy?</p>
+
+    <label>
+      <input type="checkbox" value="coding">
+      Coding
+    </label>
+
+    <label>
+      <input type="checkbox" value="gaming">
+      Gaming
+    </label>
+
+    <label>
+      <input type="checkbox" value="music">
+      Music
+    </label>
+
+    <br><br>
+
+    <!-- Comments -->
+    <label for="comments">Additional comments</label>
+    <br>
+
+    <textarea
+      id="comments"
+      placeholder="Enter your comments here..."
+    ></textarea>
+
+    <br><br>
+
+    <!-- Submit -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+    
